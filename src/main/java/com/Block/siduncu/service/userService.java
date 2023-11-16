@@ -1,6 +1,7 @@
 /*
 
  */
+
 package com.Block.siduncu.service;
 
 import org.springframework.stereotype.Service;
@@ -11,6 +12,6 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class notaService {
+public class userService {
     
 }

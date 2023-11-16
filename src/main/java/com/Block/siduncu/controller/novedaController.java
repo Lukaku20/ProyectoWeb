@@ -69,8 +69,8 @@ public class novedaController {
 
     //intento de metodo que asigne una nota a un usuario y al usuario agrega 
     //a la lista de notas
-    @PostMapping("/novedades")
-    public ResponseEntity createNovedad(@RequestBody Novedad nota, @RequestParam Long usuarioId) {
+    @PostMapping("/novedades-user")
+    public ResponseEntity createNovedadUser(@RequestBody Novedad nota, @RequestParam Long usuarioId) {
         Usuario usuario = repoUsuario.findById(usuarioId).orElseThrow(RuntimeException::new);
         nota.setUsuario(usuario);
         Novedad newNota = notaRepo.save(nota);
