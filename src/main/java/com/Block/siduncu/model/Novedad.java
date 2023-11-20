@@ -38,8 +38,8 @@ public class Novedad {
     
     
     public Novedad() {
-    
+        
     }
     
-    
+   
 }
